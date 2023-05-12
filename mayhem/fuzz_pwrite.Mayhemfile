@@ -1,0 +1,5 @@
+project: scroll
+target: fuzz-pwrite
+
+cmds:
+    - cmd: /fuzz_pwrite

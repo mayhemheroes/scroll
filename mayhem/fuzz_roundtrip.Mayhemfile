@@ -1,0 +1,5 @@
+project: scroll
+target: fuzz-roundtrip
+
+cmds:
+    - cmd: /fuzz_roundtrip
