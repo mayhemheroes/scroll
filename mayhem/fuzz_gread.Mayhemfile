@@ -1,0 +1,5 @@
+project: scroll
+target: fuzz-gread
+
+cmds:
+    - cmd: /fuzz_gread

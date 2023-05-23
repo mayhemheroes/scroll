@@ -1,0 +1,5 @@
+project: scroll
+target: fuzz-ioread
+
+cmds:
+    - cmd: /fuzz_ioread

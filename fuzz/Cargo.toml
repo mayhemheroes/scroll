@@ -1,0 +1,36 @@
+[package]
+name = "fuzz-scroll"
+version = "0.1.0"
+edition = "2021"
+
+[package.metadata]
+cargo-fuzz = true
+
+[dependencies]
+honggfuzz = "0.5.55"
+
+[dependencies.scroll]
+path = ".."
+
+[workspace]
+members = ["."]
+
+[[bin]]
+name = "fuzz_gread"
+path = "fuzz_targets/fuzz_gread.rs"
+
+[[bin]]
+name = "fuzz_ioread"
+path = "fuzz_targets/fuzz_ioread.rs"
+
+[[bin]]
+name = "fuzz_pread"
+path = "fuzz_targets/fuzz_pread.rs"
+
+[[bin]]
+name = "fuzz_pwrite"
+path = "fuzz_targets/fuzz_pwrite.rs"
+
+[[bin]]
+name = "fuzz_roundtrip"
+path = "fuzz_targets/fuzz_roundtrip.rs"

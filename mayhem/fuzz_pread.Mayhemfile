@@ -1,0 +1,5 @@
+project: scroll
+target: fuzz-pread
+
+cmds:
+    - cmd: /fuzz_pread
